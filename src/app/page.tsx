@@ -18,7 +18,7 @@ export default function LoginPage() {
       await authService.login(formData.name, formData.email);
       router.push("/dashboard");
     } catch (err) {
-      setError("Login failed. Please try again.");
+      setError(`Login failed with ${err}. Please try again.`);
     }
   };
 
