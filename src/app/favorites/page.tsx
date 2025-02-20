@@ -63,13 +63,13 @@ export default function FavoritesPage() {
           onClick={() => router.push("/dashboard")}
           className="bg-blue-500 text-white px-4 py-2 rounded"
         >
-          Back to Search
+          Back to Dashboard
         </button>
       </div>
 
       {favorites.length === 0 ? (
         <div className="text-center text-gray-500">
-          No favorite dogs yet. Go to search page to add some!
+          No favorite dogs yet. Go to Dashboard page to add some!
         </div>
       ) : (
         <>
